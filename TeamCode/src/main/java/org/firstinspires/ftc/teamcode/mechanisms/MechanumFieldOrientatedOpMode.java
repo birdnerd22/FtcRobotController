@@ -1,8 +1,9 @@
 package org.firstinspires.ftc.teamcode.mechanisms;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
+import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.HardwareMap;
-
+@TeleOp
 public class MechanumFieldOrientatedOpMode extends OpMode {
     MechanumDrive drive = new MechanumDrive();
     double forward, strafe, rotate;
