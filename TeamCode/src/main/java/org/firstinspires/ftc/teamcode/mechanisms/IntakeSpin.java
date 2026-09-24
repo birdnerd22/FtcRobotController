@@ -12,12 +12,12 @@ public class IntakeSpin {
     private IMU imu;
 
     public void init(HardwareMap hwMap){
-        intakeMotor = hwMap.get(DcMotor.class, "inMotor");
+        intakeMotor = hwMap.get(DcMotor.class, "inMotor");//add intake motor in setup
         intakeMotor.setMode(RUN_USING_ENCODER);
         imu = hwMap.get(IMU.class, "imu");
         RevHubOrientationOnRobot RevOrientation = new RevHubOrientationOnRobot(
                 RevHubOrientationOnRobot.LogoFacingDirection.UP,
-                RevHubOrientationOnRobot.UsbFacingDirection.FORWARD);
+                RevHubOrientationOnRobot.UsbFacingDirection.FORWARD);//change if design changes this
         //This might have to change but hopefully not
         imu.initialize(new IMU.Parameters(RevOrientation));
 
