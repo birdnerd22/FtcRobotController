@@ -24,6 +24,8 @@ public class IntakeOpMode extends OpMode {
             intake.intake(1.0);
         } else if(bPressed) {
             intake.intake(-1.0);//outtake
+        } else {
+            intake.intake(0.0);//not moving
         }
 
 
